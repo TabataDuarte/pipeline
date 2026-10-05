@@ -3,7 +3,7 @@ Configurações da aplicação — Simulador de Cartões de Crédito
 
 ATENÇÃO: este arquivo contém vulnerabilidades intencionais para fins
 didáticos no laboratório de SonarQube. Não utilizar como referência
-de boas práticas.
+de boas práticas..
 """
 import os
 
