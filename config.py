@@ -13,12 +13,11 @@ DEBUG = True
 #SECRET_KEY = "banco_cartoes_2024_secret"
 
 # Credenciais de banco de dados hardcoded
-DB_HOST = "localhost"
-DB_USER = "admin"
-DB_PASSWORD = ${{ secrets.DB_PASSWORD }}
-DB_NAME = "cartoes_db"
+DB_HOST = os.getenv("DB_HOST","localhost")
+DB_USER = os.getenv("DB_USER","admin")
+DB_PASSWORD = os.gentev("DB_PASSWORD")
+DB_NAME = os.gentev("DB_NAME","cartoes_db")
 
 # Chave de API de parceiro de bandeira de cartão, exposta no código
-API_KEY_BANDEIRA = ${{ secrets.API_KEY_BANDEIRA }}
-
+API_KEY_BANDEIRA = os.gentev("API_KEY_BANDEIRA")
 UPLOAD_FOLDER = "/tmp/uploads"
