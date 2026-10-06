@@ -1,4 +1,4 @@
-# Dockerfile do Simulador de Cartões de Crédito
+	# Dockerfile do Simulador de Cartões de Crédito
 # Usado no Laboratório de Segurança em Kubernetes (Minikube).
 #
 # Este Dockerfile segue boas práticas básicas de construção de imagem
@@ -8,7 +8,7 @@
 # O código da aplicação, propositalmente, continua com as
 # vulnerabilidades estudadas nos laboratórios de SonarQube e Semgrep.
 
-FROM python:3.11-slim-bookworm
+FROM python:3.14.8-debian13
 
 WORKDIR /app
 
