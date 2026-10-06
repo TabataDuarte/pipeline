@@ -125,8 +125,8 @@ jobs:
           scanners: 'vuln'
           severity: 'CRITICAL,HIGH'
           exit-code: '1'
-          format: 'json'
-          output: 'trivy-fs-results.json'
+          format: 'sarif'
+          output: 'trivy-fs-results.sarif'
 
       - name: Trivy - relatorio informativo (nao bloqueia)
         if: always()
@@ -144,7 +144,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: relatorio-trivy-dependencias
-          path: trivy-fs-results.json
+          path: trivy-fs-results.sarif
           if-no-files-found: ignore
 
   # ============================================================
