@@ -125,8 +125,8 @@ jobs:
           scanners: 'vuln'
           severity: 'CRITICAL,HIGH'
           exit-code: '1'
-          format: 'sarif'
-          output: 'trivy-image-results.sarif'
+          format: 'json'
+          output: 'trivy-fs-results.json'
 
       - name: Trivy - relatorio informativo (nao bloqueia)
         if: always()
