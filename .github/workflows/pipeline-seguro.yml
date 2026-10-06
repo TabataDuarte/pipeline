@@ -164,7 +164,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
+          username: ${{ tabataduarte }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build e push da imagem
