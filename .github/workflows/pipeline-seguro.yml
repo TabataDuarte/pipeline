@@ -14,7 +14,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ tabataduarte }}
+  IMAGE_NAME: tabataduarte/pipeline
 
 jobs:
 
