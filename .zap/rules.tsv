@@ -19,4 +19,4 @@
 90022   WARN    (Application Error Disclosure)
 
 # --- Falsos positivos conhecidos desta aplicacao: IGNORE (documentar o porque) ---
-# 2     IGNORE  (Private IP Disclosure) - ambiente de teste usa IP interno de proposito
+2     IGNORE  (Private IP Disclosure) - ambiente de teste usa IP interno de proposito
