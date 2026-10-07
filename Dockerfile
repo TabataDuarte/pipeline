@@ -1,4 +1,4 @@
-	# Dockerfile do Simulador de Cartões de Crédito
+# Dockerfile do Simulador de Cartões de Crédito
 # Usado no Laboratório de Segurança em Kubernetes (Minikube).
 #
 # Este Dockerfile segue boas práticas básicas de construção de imagem
@@ -14,7 +14,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 RUN apt update \
-	&& apt install gcc -y
+	&& apt install gcc -y \
 	&& apt upgrade -y \
 	&& pip install --no-cache-dir -r requirements.txt \
 	&& apt clean \
